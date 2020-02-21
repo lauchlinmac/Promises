@@ -16,6 +16,10 @@ li.signature {
     background-color: yellow;
 }
 
+#goal {
+    background-color: yellow;
+}
+
 #testing,
 li#testing {
     display: none;
