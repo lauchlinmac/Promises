@@ -86,7 +86,7 @@ function Action(twice) {
         document.getElementById('periodStuff').innerHTML =
           '<td>Game Not Yet Started - ' + realTime + '</td>';
       } else {
-        var liveNum = json.liveData.plays.currentPlay.about.eventIdx;
+        var liveNum = data.liveData.plays.currentPlay.about.eventIdx;
         // ISSUE: when different game is selected, currentNum misaligns.
         while (currentNum <= liveNum) {
           event = data.liveData.plays.allPlays[currentNum].result.event;
