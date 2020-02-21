@@ -1,0 +1,45 @@
+li.signature {
+    list-style-type: none;
+    border: solid 3px brown;
+    border-radius: 50px 30px;
+    padding: 20px;
+    width: fit-content;
+    height: fit-content;
+    font-weight: bold;
+    font-size: 3vw;
+    background: rgb(208, 240, 248);
+}
+
+.signature:hover {
+    color: red;
+    cursor: pointer;
+    background-color: yellow;
+}
+
+#testing,
+li#testing {
+    display: none;
+}
+
+
+#periodStuff {
+    display: block;
+    vertical-align: text-bottom;
+}
+
+#homeScore img,
+#awayScore img {
+    width: 15vw;
+}
+
+#score div {
+    font-size: 2vh;
+    display: inline;
+    padding: 15px;
+    vertical-align: bottom;
+}
+
+.fa:hover {
+    color: red;
+    cursor: pointer;
+}
