@@ -49,7 +49,16 @@ function startUp(twice) {
   } else {
     x.style.display = 'block';
   }
-  setInterval(Action(twice), 5000);
+  if (typeof myVar == 'undefined') {
+    myVar = setInterval(() => {
+      Action(twice);
+    }, 5000);
+  } else {
+    clearInterval(myVar);
+    myVar = setInterval(() => {
+      Action(twice);
+    }, 5000);
+  }
 }
 
 function Action(twice) {
