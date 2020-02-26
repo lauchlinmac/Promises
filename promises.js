@@ -26,8 +26,8 @@ fetchSchedule()
       gameURL = base_url + data.dates[0].games[x].link;
       gameText = document.createTextNode(
         data.dates[0].games[x].teams.away.team.name +
-          ' @ ' +
-          data.dates[0].games[x].teams.home.team.name
+        ' @ ' +
+        data.dates[0].games[x].teams.home.team.name
       );
       brk = document.createAttribute('br');
       const dirt = document.getElementById('testing');
@@ -105,6 +105,8 @@ function Action(twice) {
           desc = data.liveData.plays.allPlays[currentNum].result.description;
           awayScore = data.liveData.plays.allPlays[currentNum].about.goals.away;
           homeScore = data.liveData.plays.allPlays[currentNum].about.goals.home;
+          playerZero = data.liveData.plays.allPlays[currentNum].players[0].player.fullName;
+
           if ('team' in data.liveData.plays.allPlays[currentNum]) {
             teamPlay =
               'https://www-league.nhlstatic.com/images/logos/teams-current-primary-light/' +
@@ -116,12 +118,12 @@ function Action(twice) {
           }
 
           document.getElementById('homeScore').innerHTML =
-            '<img src="https://www-league.nhlstatic.com/images/logos/teams-current-primary-light/' +
+            '<img src="https://www-league.nhlstatic.com/images/logos/teams-current-circle/' +
             awayID +
             '.svg"/>' +
             awayScore;
           document.getElementById('awayScore').innerHTML =
-            '<img src="https://www-league.nhlstatic.com/images/logos/teams-current-primary-light/' +
+            '<img src="https://www-league.nhlstatic.com/images/logos/teams-current-circle/' +
             homeID +
             '.svg"/>' +
             homeScore;
@@ -135,7 +137,7 @@ function Action(twice) {
           if (event.includes('Goal')) {
             goalPlayer =
               data.liveData.plays.allPlays[currentNum].players[0].player
-                .fullName;
+              .fullName;
 
             elChild.innerHTML =
               '<div id="goal"><h3>' +
