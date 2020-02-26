@@ -1,102 +1,49 @@
-body {
-  margin: 0;
-  padding: 0;
-}
-
 li.signature {
-  list-style-type: none;
-  border: solid 3px brown;
-  border-radius: 50px 30px;
-  padding: 20px;
-  width: fit-content;
-  height: fit-content;
-  font-weight: bold;
-  font-size: 3vw;
-  background: rgb(208, 240, 248);
-  margin: 0;
-}
-
-#score {
-  background-color: lightgrey;
+    list-style-type: none;
+    border: solid 3px brown;
+    border-radius: 50px 30px;
+    padding: 20px;
+    width: fit-content;
+    height: fit-content;
+    font-weight: bold;
+    font-size: 3vw;
+    background: rgb(208, 240, 248);
 }
 
 .signature:hover {
-  color: red;
-  cursor: pointer;
-  background-color: yellow;
+    color: red;
+    cursor: pointer;
+    background-color: yellow;
 }
 
-.goal {
-  background-image: linear-gradient(rgb(108, 231, 139), white);
-  display: block;
-}
-
-#stuff {
-  padding: 0;
-  margin: 0;
+#goal {
+    background-color: yellow;
 }
 
 #testing,
 li#testing {
-  display: none;
+    display: none;
 }
+
 
 #periodStuff {
-  display: block;
-  vertical-align: text-bottom;
-  font-size: 14px !important;
-  font-weight: bold;
-}
-
-#periodStuff:before {
-  content: "";
-  display: block;
+    display: block;
+    vertical-align: text-bottom;
 }
 
 #homeScore img,
 #awayScore img {
-  display: inline-flex;
-  height: 2em;
-  width: 2em;
-}
-
-div#homeScore,
-div#awayScore {
-  margin-bottom: 50%;
-  height: 5em;
-  display: block;
-  font-size-adjust: unset;
-  font-size: 2em !important;
+    width: 15vw;
 }
 
 #score div {
-  font-size: 2vh;
-  display: inline;
-  padding: 15px;
-  vertical-align: bottom;
+    font-size: 2vh;
+    display: inline;
+    padding: 15px;
+    vertical-align: bottom;
 }
 
 .fa:hover {
-  color: red;
-  cursor: pointer;
-}
-
-.hit {
-  background-image: linear-gradient(rgb(252, 178, 67), white);
-  display: block;
-}
-
-.shot {
-  background-image: linear-gradient(rgb(255, 251, 0), white);
-  display: block;
-}
-
-.stop {
-  background-image: linear-gradient(rgb(245, 125, 125), white);
-  display: block;
-}
-
-.faceoff {
-  background-image: linear-gradient(rgb(125, 181, 245), white);
-  display: block;
+    color: red;
+    cursor: pointer;
 }
